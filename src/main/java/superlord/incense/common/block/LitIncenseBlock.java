@@ -1,8 +1,6 @@
 package superlord.incense.common.block;
 
 import java.util.Queue;
-import java.util.Random;
-
 import javax.annotation.Nullable;
 
 import com.google.common.collect.Lists;
@@ -11,6 +9,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.tags.FluidTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.util.Tuple;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -128,8 +127,7 @@ public class LitIncenseBlock extends BaseEntityBlock implements SimpleWaterlogge
 		return createTickerHelper(p_152162_, BlockEntityInit.LIT_INCENSE.get(), LitIncenseBlockEntity::tick);
 	}
 
-
-	public void animateTick(BlockState p_57494_, Level p_57495_, BlockPos p_57496_, Random p_57497_) {
+	public void animateTick(BlockState p_57494_, Level p_57495_, BlockPos p_57496_, RandomSource p_57497_) {
 		Direction direction = p_57494_.getValue(FACING);
 		if (direction == Direction.NORTH) {
 			double d0 = (double)p_57496_.getX() + 0.5D;

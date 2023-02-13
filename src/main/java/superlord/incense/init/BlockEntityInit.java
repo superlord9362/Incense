@@ -9,7 +9,7 @@ import superlord.incense.common.entity.block.LitIncenseBlockEntity;
 
 public class BlockEntityInit {
 	
-	public static final DeferredRegister<BlockEntityType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Incense.MOD_ID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, Incense.MOD_ID);
 
 	public static final RegistryObject<BlockEntityType<LitIncenseBlockEntity>> LIT_INCENSE = REGISTER.register("lit_incense", () -> BlockEntityType.Builder.of(LitIncenseBlockEntity::new,
     		BlockInit.LIT_INCENSE.get()

@@ -36,8 +36,7 @@ import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.monster.Spider.SpiderTargetGoal;
 import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.event.TickEvent.WorldTickEvent;
-import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingTickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import superlord.incense.Incense;
@@ -51,7 +50,7 @@ public class CommonEvents {
 
 	@SuppressWarnings("static-access")
 	@SubscribeEvent
-	public static void onEntityEndRelaxation(LivingUpdateEvent event) {
+	public static void onEntityEndRelaxation(LivingTickEvent event) {
 		if (event.getEntity() instanceof Spider spider) {
 			if (!spider.hasEffect(EffectInit.RELAXED.get())) {
 				spider.targetSelector.addGoal(1, new HurtByTargetGoal(spider));
@@ -151,9 +150,4 @@ public class CommonEvents {
 		}
 	}
 	
-	@SubscribeEvent
-	public static void onWorldTick(WorldTickEvent event) {
-		//System.out.println("Hello!");
-	}
-
 }

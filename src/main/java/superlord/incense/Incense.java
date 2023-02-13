@@ -20,9 +20,9 @@ import superlord.incense.init.ItemInit;
 @Mod(Incense.MOD_ID)
 @Mod.EventBusSubscriber(modid = Incense.MOD_ID)
 public class Incense {
-	
+
     public static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "incense";
+	public static final String MOD_ID = "incense";
 	
 	public Incense() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
