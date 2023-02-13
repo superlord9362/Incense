@@ -1,0 +1,24 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+[[mods]] #mandatory
+modId="incense" #mandatory
+version="1.0.0" #mandatory
+displayName="Incense" #mandatory
+credits="Ralof for texturing and helping brainstorm" #optional
+authors="superlord9632" #optional
+description='''
+Incense is a small mod adding Incense and a new effect to the game.
+'''
+[[dependencies.incense]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.incense]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

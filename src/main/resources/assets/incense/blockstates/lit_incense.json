@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "incense:block/lit_incense",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "incense:block/lit_incense"
+    },
+    "facing=south": {
+      "model": "incense:block/lit_incense",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "incense:block/lit_incense",
+      "y": 270
+    }
+  }
+}

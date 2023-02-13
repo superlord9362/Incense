@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  C",
+    " S ",
+    "BBB"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:charcoal"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "incense:incense"
+  }
+}
